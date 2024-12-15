@@ -1,0 +1,50 @@
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.todo-item input[type="checkbox"]:hover {
+  transform: scale(1.1);
+}
+
+.todo-item p {
+  flex-grow: 1;
+  margin: 0 10px;
+  font-family: 1rem;
+  color: #333;
+  cursor: default;
+}
+
+.todo-item button {
+  background: none;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-item button img {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.2s ease;
+}
+
+.todo-item button:hover img {
+  transform: scale(1.2);
+}

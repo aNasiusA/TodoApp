@@ -1,0 +1,84 @@
+/* Global Styles */
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Container */
+.todo-container {
+  width: 90%;
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-container h2 {
+  text-align: center;
+  color: #333;
+  font-size: 1.5rem; /* Adjusted for smaller screens */
+  margin-bottom: 15px;
+}
+
+/* Input Field */
+.input-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: ivory;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.input-field:focus-within {
+  border: 1px solid #007bff;
+}
+
+.input-field input {
+  width: 70%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+/* Add Button */
+.add-button {
+  width: 25%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (min-width: 768px) {
+  .todo-container {
+    width: 60%;
+  }
+
+  .todo-container h2 {
+    font-size: 2rem;
+  }
+
+  .add-button {
+    width: 20%;
+  }
+
+  .input-field input {
+    width: 75%;
+  }
+}

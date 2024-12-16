@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon app.js",
-    "build": "npm install --prefix ./client/todo && npm run build --prefix ./client/todo $$ npm intall"
+    "build": "npm install --prefix ./client/todo && npm run build --prefix ./client/todo && npm install"
   },
   "keywords": [],
   "author": "",
